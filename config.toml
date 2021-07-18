@@ -1,0 +1,15 @@
+# Use this to define local configurations for your project.
+# Any configuration defined here will override its global counterpart.
+# Global configurations are located in `C:\Users\Elyan\AppData\Roaming\YGOFabrica\config.toml`.
+locale = "en"
+
+[picset.hd]
+default = true
+mode = "proxy"
+ext = "png"
+field = true
+holo = false
+
+[expansion.orbital]
+default = true
+recipe = ["orbital.toml"]

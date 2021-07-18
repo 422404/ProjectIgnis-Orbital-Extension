@@ -1,0 +1,262 @@
+[macro]
+SETN = "ORBT-$1"
+
+################################################################################
+#                                  Archetype                                   #
+################################################################################
+
+[set.orbital]
+name = "Orbital"
+code = 0xf00
+
+################################################################################
+#                                   Monsters                                   #
+################################################################################
+
+[[card]]
+id = 4067697216
+setnumber = "${SETN|001}"
+set = "orbital"
+name = "Long-Forgotten Orbital Technician"
+level = 12
+attribute = "dark"
+race = "machine"
+type = "monster normal"
+atk = 0
+def = 3000
+flavor-text = '''
+A long-forgotten technician that disappeared from the radars when a solar flare hit the damaged orbital weapon he was repairing. A rumor says that the communication link has been reestablished years after the incident and that what was recorded from the still functioning space suit's microphone is highly classified.'''
+
+[[card]]
+id = 4067697217
+setnumber = "${SETN|002}"
+set = "orbital"
+name ="Orbital Holographic Decoy"
+level = 4
+attribute = "dark"
+race = "machine"
+type = "monster effect"
+atk = 0
+def = 0
+effect = '''
+If this card is destroyed by battle or effect: discard 1 card from your Hand, and if you do, Special Summon any number of "Orbital Holographic Decoy" from your Deck or your Hand.
+Instead of sending this card to the GY, equip it to a controlled "Orbital" Xyz monster.
+'''
+
+[[card]]
+id = 4067697218
+setnumber = "${SETN|003}"
+set = "orbital"
+name ="Orbital Experimental Nuclear Reactor"
+level = 12
+attribute = "dark"
+race = "machine"
+type = "monster effect"
+atk = 3000
+def = 0
+effect = '''
+Can be Special Summoned if you have at least one face-down card in your Spell & Trap Zone.
+Once per turn: You can Special Summon up to 2 "Orbital Experimental Nuclear Reactor Tokens" (Machine/DARK/Level 11/ATK 0/DEF 0).
+If sending this card to the GY: if you control an "Orbital Relay System", attach this card to it.'''
+
+[[card]]
+id = 2878970365
+setnumber = "${SETN|004}"
+set = "orbital"
+name = "Orbital Solar Power Station"
+level = 11
+attribute = "dark"
+race = "machine"
+type = "monster effect"
+atk = 2800
+def = 2500
+effect = '''
+If this card is detached from a Machine Xyz Monster and sent to the GY to activate that monster's effect: You can target 1 card your opponent controls; destroy it.'''
+
+[[card]]
+id = 2706616015
+setnumber = "${SETN|005}"
+set = "orbital"
+name = "Orbital Defense Drone"
+level = 4
+attribute = "dark"
+race = "machine"
+type = "monster effect"
+atk = 1600
+def = 1200
+effect = '''
+When this card is attached to an Xyz Monster that is sent to the GY, you can Special Summon this card in Defense Position.'''
+
+# TODO
+# * If this card is detached from a Machine Xyz Monster and sent to the GY to activate that monster's effect: Shuffle an "Orbital" monster in the GY into the Deck.
+
+################################################################################
+#                                    Spells                                    #
+################################################################################
+
+[[card]]
+id = 4067697219
+setnumber = "${SETN|006}"
+set = "orbital"
+name = "Orbital Refueling"
+type = "spell"
+effect = '''
+Target 1 "Orbital" Xyz Monster you control; attach this card to that monster as an Xyz material.'''
+
+[[card]]
+id = 4067697220
+setnumber = "${SETN|007}"
+set = "orbital"
+name = "Orbital Restocking"
+type = "spell"
+effect = '''
+Target up to 5 cards (min. 1) in your GY; shuffle them in the Deck.'''
+
+[[card]]
+id = 4067697221
+setnumber = "${SETN|008}"
+set = "orbital"
+name = "Orbital Deployment"
+type = "field spell"
+effect = '''
+Once per turn: When an "Orbital" monster is Special Summoned, you can Special Summon an "Orbital" monster from the Deck.
+If this card is sent to the GY, Special Summon an "Orbital" monster from your Deck or GY.'''
+
+[[card]]
+id = 4067697222
+setnumber = "${SETN|009}"
+set = "orbital"
+name = "Orbital Kinetic Bombardment"
+type = "spell"
+effect = '''
+Target 1 "Orbital" Xyz monster on the player field, detach 2 materials from it then target up to 2 opponent's monsters on the field, send them to the GY.
+Instead of sending this card to the GY, attach it to a controlled Rank 10+ Xyz monster.'''
+
+[[card]]
+id = 4067697223
+setnumber = "${SETN|010}"
+set = "orbital"
+name = "Orbital Comm. Jammer"
+type = "field spell"
+effect = '''
+Once per turn: The player controlling this card can negate the activation of an opponent's effect if at least 1 "Orbital" monster is on the field.
+When this card is sent to the GY, add one "Orbital" monster from your Deck to your Hand.'''
+
+[[card]]
+id = 3623849187
+setnumber = "${SETN|018}"
+set = "orbital"
+name = "Orbital Repair Drone"
+type = "continuous spell"
+effect = '''
+Each time an Xyz Material is detached, you gain 100 LP.'''
+
+################################################################################
+#                                     Traps                                    #
+################################################################################
+
+[[card]]
+id = 4067697224
+setnumber = "${SETN|011}"
+set = "orbital"
+name = "Orbital Doomsday Protocol"
+type = "trap"
+effect = '''
+Detach 1 material from each "Orbital" Xyz monster with materials that the player controls; target opponent's cards on the field up to the number of detached materials, destroy them.
+If sending this card to the GY: if you control an "Orbital Relay System", attach this card to it instead.'''
+
+[[card]]
+id = 4067697225
+setnumber = "${SETN|012}"
+set = "orbital"
+name = "Orbital Trajectory Correction"
+type = "trap"
+effect = '''
+When an opponent's monster declares an attack: Discard 1 card from your Hand; you can change the position of any of your controlled monsters.
+If sending this card to the GY: if you control an "Orbital Relay System", attach this card to it instead.'''
+
+[[card]]
+id = 4067697226
+setnumber = "${SETN|013}"
+set = "orbital"
+name = "Orbital Redeployment"
+type = "trap"
+effect = '''
+When an "Orbital" Xyz monster would be sent to the GY: Send its materials to the GY; leave it on the field.
+If sending this card to the GY: if you control an "Orbital Relay System", attach this card to it instead.'''
+
+################################################################################
+#                              Extra Deck Monsters                             #
+################################################################################
+
+[[card]]
+id = 4067697227
+setnumber = "${SETN|014}"
+set = "orbital"
+name ="Orbital Space-To-Ground Delivery System"
+level = 12
+attribute = "dark"
+race = "machine"
+type = "xyz monster effect"
+atk = 3000
+def = 4000
+effect = '''
+3+ Level 12 Machine monsters
+Cannot be targeted by effects.
+Once per turn (Quick effect): You can detach 2 materials; activate one of these effects:
+● Draw 2 cards from your Deck.
+● Target 1 card on the field, negate its effect.
+● Inflict 2500 damage to your opponent.
+● Add 1 Field Spell from your GY to your hand.'''
+
+[[card]]
+id = 4067697228
+setnumber = "${SETN|015}"
+set = "orbital"
+name ="Orbital Stealth Intelligence System"
+level = 11
+attribute = "dark"
+race = "machine"
+type = "xyz monster effect"
+atk = 2800
+def = 3000
+effect = '''
+2 Level 11 Machine monsters
+Cannot be targeted by opponent's effects.
+Once per turn: You can activate one of these effects:
+● Detach 1 materials; reveal 1 card from your opponent's Hand and if it is a Trap, send it to the GY.
+● Detach 2 materials; target an "Orbital Relay System" which has materials then Special Summon an "Orbital Advanced Targeting System" from the Extra Deck and attach all the materials of the targeted monster to it.'''
+
+[[card]]
+id = 4067697229
+setnumber = "${SETN|016}"
+set = "orbital"
+name ="Orbital Advanced Targeting System"
+level = 10
+attribute = "dark"
+race = "machine"
+type = "xyz monster effect"
+atk = 4000
+def = 4000
+effect = '''
+3+ Level 10 Machine monsters
+Once per turn: You can detach 1 material; activate one of these effects:
+● Change an opponent's face-down card to face-up, also if it is a Flip monster, you can negate the Flip effect.
+● Target one monster, this turn it will attack the opponent's LP directly.'''
+
+[[card]]
+id = 4067697230
+setnumber = "${SETN|017}"
+set = "orbital"
+name ="Orbital Orbital Relay"
+level = 4
+attribute = "dark"
+race = "machine"
+type = "xyz monster effect"
+atk = 0
+def = 3000
+effect = '''
+2+ Level 4 Machine monsters
+Cannot be destroyed by battle.
+At the start of the Damage Step, if this card battles an opponent's monster: You can attach that monster to this card as a face-up material.
+Once per turn: You can detach up to 2 materials; attach these materials to another "Orbital" Xyz monster.'''
