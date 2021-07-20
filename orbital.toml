@@ -248,7 +248,7 @@ Once per turn: You can detach 1 material; activate one of these effects:
 id = 4067697230
 setnumber = "${SETN|017}"
 set = "orbital"
-name ="Orbital Orbital Relay"
+name ="Orbital Relay System"
 level = 4
 attribute = "dark"
 race = "machine"
