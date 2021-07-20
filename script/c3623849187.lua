@@ -1,6 +1,6 @@
 -- Orbital Repair Drone
 -- Continuous Spell
--- Each time an Xyz Material is detached, you gain 100 LP
+-- Each time an Xyz Material is detached, you gain 200 LP
 local s, id = GetID()
 function s.initial_effect(c)
   Duel.EnableGlobalFlag(GLOBALFLAG_DETACH_EVENT)
@@ -13,6 +13,7 @@ function s.initial_effect(c)
 
   -- Detach Xyz Material
   local e2 = Effect.CreateEffect(c)
+  e2:SetCategory(CATEGORY_RECOVER)
   e2:SetType(EFFECT_TYPE_FIELD + EFFECT_TYPE_CONTINUOUS)
   e2:SetProperty(EFFECT_FLAG_DELAY)
   e2:SetCode(EVENT_DETACH_MATERIAL)
@@ -24,7 +25,6 @@ end
 function s.addLP(e, tp, eg, ep, ev, re, r, rp)
   -- If an Xyz monster with materials is sent to GY:
   --  -> the 'eg' group contains only the monster the material was detached from.
-  -- Else: it is empty
   if not eg:GetFirst():IsLocation(LOCATION_MZONE) then return end
-  Duel.Recover(tp, 100, REASON_EFFECT)
+  Duel.Recover(tp, 200, REASON_EFFECT)
 end

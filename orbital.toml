@@ -85,9 +85,9 @@ type = "monster effect"
 atk = 1600
 def = 1200
 effect = '''
-When this card is attached to an Xyz Monster that is sent to the GY, you can Special Summon this card in Defense Position.'''
+If this card is attached to an Xyz Monster that is sent to the GY: You can Special Summon this card in Defense Position.'''
 
-# TODO
+# TODO Add Level 11 DARK Machine Monster
 # * If this card is detached from a Machine Xyz Monster and sent to the GY to activate that monster's effect: Shuffle an "Orbital" monster in the GY into the Deck.
 
 ################################################################################
@@ -149,7 +149,7 @@ set = "orbital"
 name = "Orbital Repair Drone"
 type = "continuous spell"
 effect = '''
-Each time an Xyz Material is detached, you gain 100 LP.'''
+Each time an Xyz Material is detached, you gain 200 LP.'''
 
 ################################################################################
 #                                     Traps                                    #
