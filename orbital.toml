@@ -40,9 +40,10 @@ type = "monster effect"
 atk = 0
 def = 0
 effect = '''
-If this card is destroyed by battle or effect: discard 1 card from your Hand, and if you do, Special Summon any number of "Orbital Holographic Decoy" from your Deck or your Hand.
-Instead of sending this card to the GY, equip it to a controlled "Orbital" Xyz monster.
-'''
+If this card is destroyed by battle or effect: Special Summon any number of "Orbital Holographic Decoy" from your Deck or your Hand.'''
+strings = [
+    "Special Summon \"Orbital Holographic Decoys\" from the Deck or Hand?"
+]
 
 [[card]]
 id = 4067697218
