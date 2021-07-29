@@ -1,6 +1,7 @@
 [macro]
 SETN = "ORBT-$1"
 HOPT = "You can only use the effect of \"$1\" once per turn."
+HOPT_THIS = "You can only use this effect of \"$1\" once per turn."
 
 ################################################################################
 #                                  Archetype                                   #
@@ -89,6 +90,21 @@ def = 1200
 effect = '''
 If this card is attached to an Xyz Monster that is sent to the GY: You can Special Summon this card in Defense Position.
 ${HOPT|Orbital Defense Drone}'''
+
+[[card]]
+id = 1451037073
+setnumber = "${SETN|019}"
+set = "orbital"
+name = "Orbital Spy Satellite"
+level = 4
+attribute = "dark"
+race = "machine"
+type = "monster effect"
+atk = 1400
+def = 1000
+effect = '''
+If an "Orbital" Machine monster(s) is Normal or Special Summoned to your field (except during the Damage Step): You can Special Summon this card from your Hand. ${HOPT_THIS|Orbital Spy Satellite}
+Once per turn: You can destroy a Field Spell you control; activate a Field Spell from the Deck.'''
 
 # TODO Add Level 11 DARK Machine Monster
 # * If this card is detached from a Machine Xyz Monster and sent to the GY to activate that monster's effect: Shuffle an "Orbital" monster in the GY into the Deck.
