@@ -132,6 +132,25 @@ strings = [
     "Normal Summon without Tributing"
 ]
 
+[[card]]
+id = 1480080734
+setnumber = "${SETN|021}"
+set = "orbital"
+name = "Orbital Junk Recycler"
+level = 12
+attribute = "dark"
+race = "machine"
+type = "monster effect"
+atk = 2200
+def = 2000
+effect = '''
+Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by shuffling all "Orbital" Spells & Traps in your Graveyard into the Deck, and cannot be Special Summoned by other ways.
+An Xyz Monster that was Summoned using this card on the field as Xyz Material gains this effect:
+● Once per turn: You can detach 1 material; discard 1 card, and if you do, add the detached material to your Hand.'''
+strings = [
+    "Discard 1 card and send a material to the Hand"
+]
+
 ################################################################################
 #                                    Spells                                    #
 ################################################################################
