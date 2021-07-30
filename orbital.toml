@@ -113,8 +113,24 @@ effect = '''
 If an "Orbital" Machine monster(s) is Normal or Special Summoned to your field (except during the Damage Step): You can Special Summon this card from your Hand. ${HOPT_THIS|Orbital Spy Satellite}
 Once per turn: You can destroy a Field Spell you control; activate a Field Spell from the Deck.'''
 
-# TODO Add Level 11 DARK Machine Monster
-# * If this card is detached from a Machine Xyz Monster and sent to the GY to activate that monster's effect: Shuffle an "Orbital" monster in the GY into the Deck.
+[[card]]
+id = 4043964612
+setnumber = "${SETN|020}"
+set = "orbital"
+name = "Orbital Collector Drone"
+level = 11
+attribute = "dark"
+race = "machine"
+type = "monster effect"
+atk = 1900
+def = 2000
+effect = '''
+You can Normal Summon this card without Tributing, but its Level becomes 4 until the End Phase.
+If this card is detached from a Machine Xyz Monster and sent to the GY to activate that monster's effect: Shuffle an "Orbital" monster in the GY into the Deck.'''
+strings = [
+    "Shuffle an \"Orbital\" card in the GY into to the Deck",
+    "Normal Summon without Tributing"
+]
 
 ################################################################################
 #                                    Spells                                    #
