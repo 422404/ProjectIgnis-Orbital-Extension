@@ -33,18 +33,21 @@ function s.condition(e, tp, eg, ep, ev, re, r, rp)
     and card:IsPreviousLocation(LOCATION_OVERLAY)
 end
 
+function s.filter(card)
+  return card:IsAbleToDeck() and card:IsType(TYPE_MONSTER) and card:IsSetCard(0xf00)
+end
+
 function s.target(e, tp, eg, ep, ev, re, r, rp, chk, chkc)
   if chkc then
-    return chkc:IsLocation(LOCATION_GRAVE) and chkc:IsControler(tp) and chkc:IsAbleToDeck()
+    return chkc:IsLocation(LOCATION_GRAVE) and chkc:IsControler(tp) and s.filter(chkc)
   end
 
-  local filter = aux.FilterBoolFunction(Card.IsAbleToDeck)
   if chk == 0 then
-    return Duel.IsExistingTarget(filter, tp, LOCATION_GRAVE, 0, 1, nil)
+    return Duel.IsExistingTarget(s.filter, tp, LOCATION_GRAVE, 0, 1, nil)
   end
 
   Duel.Hint(HINT_SELECTMSG, tp, HINTMSG_TODECK)
-  local g = Duel.SelectTarget(tp, filter, tp, LOCATION_GRAVE, 0, 1, 1, nil)
+  local g = Duel.SelectTarget(tp, s.filter, tp, LOCATION_GRAVE, 0, 1, 1, nil)
   Duel.SetOperationInfo(0, CATEGORY_TODECK, g, 1, 0, 0)
 end
 
@@ -52,7 +55,7 @@ function s.operation(e, tp, eg, ep, ev, re, r, rp)
   local tc = Duel.GetFirstTarget()
 
   if tc:IsRelateToEffect(e) then
-    Duel.SendtoDeck(tc, nil, 2, REASON_EFFECT)
+    Duel.SendtoDeck(tc, nil, SEQ_DECKSHUFFLE, REASON_EFFECT)
   end
 end
 
