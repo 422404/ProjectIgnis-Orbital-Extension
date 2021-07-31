@@ -192,8 +192,9 @@ set = "orbital"
 name = "Orbital Deployment"
 type = "field spell"
 effect = '''
-Once per turn: When an "Orbital" monster is Special Summoned, you can Special Summon an "Orbital" monster from the Deck.
-If this card is sent to the GY, Special Summon an "Orbital" monster from your Deck or GY.'''
+Gain 500 LP each time you Special Summon an "Orbital" Monster.
+Once per turn: Send a card from your Hand to the GY; add 1 "Orbital" Monster from your Deck to your Hand.
+If this card is sent to the GY: Add 500 ATK/DEF to Machine Monsters your control. ${HOPT_THIS|Orbital Deployment}'''
 
 [[card]]
 id = 4067697222
