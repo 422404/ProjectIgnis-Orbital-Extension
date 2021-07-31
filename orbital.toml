@@ -224,6 +224,15 @@ type = "continuous spell"
 effect = '''
 Each time an Xyz Material is detached, you gain 200 LP.'''
 
+[[card]]
+id = 2009940845
+setnumber = "${SETN|022}"
+set = "orbital"
+name = "Orbital Repair Drone Swarm"
+type = "field spell"
+effect = '''
+During the End Phase: If you control an "Orbital Repair System", attach all Machine monsters in your GY to it.'''
+
 ################################################################################
 #                                     Traps                                    #
 ################################################################################
@@ -321,8 +330,8 @@ Once per turn: You can detach 1 material; activate one of these effects:
 id = 4067697230
 setnumber = "${SETN|017}"
 set = "orbital"
-name ="Orbital Relay System"
-level = 4
+name ="Orbital Repair System"
+rank = 4
 attribute = "dark"
 race = "machine"
 type = "xyz monster effect"
@@ -331,5 +340,5 @@ def = 3000
 effect = '''
 2+ Level 4 Machine monsters
 Cannot be destroyed by battle.
-At the start of the Damage Step, if this card battles an opponent's monster: You can attach that monster to this card as a face-up material.
-Once per turn: You can detach up to 2 materials; attach these materials to another "Orbital" Xyz monster.'''
+You can detach 1 material, attach it to another Machine Xyz Monster. This effect can be activated up to 3 times per turn.
+If this card is in the GY: Tribute a Machine Monster; Special Summon this card.'''
