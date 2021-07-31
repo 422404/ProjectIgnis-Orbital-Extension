@@ -342,3 +342,6 @@ effect = '''
 Cannot be destroyed by battle.
 You can detach 1 material, attach it to another Machine Xyz Monster. This effect can be activated up to 3 times per turn.
 If this card is in the GY: Tribute a Machine Monster; Special Summon this card.'''
+strings = [
+    "Tribute 1 Machine Monster then Special Summon this card"
+]
