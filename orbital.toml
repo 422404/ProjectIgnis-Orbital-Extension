@@ -58,9 +58,21 @@ type = "monster effect"
 atk = 3000
 def = 0
 effect = '''
-Can be Special Summoned if you have at least one face-down card in your Spell & Trap Zone.
-Once per turn: You can Special Summon up to 2 "Orbital Experimental Nuclear Reactor Tokens" (Machine/DARK/Level 11/ATK 0/DEF 0).
-If sending this card to the GY: if you control an "Orbital Relay System", attach this card to it.'''
+Can be Special Summoned if you have at least one face-down card in your Spell & Trap Zone. ${HOPT_THIS|Orbital Experimental Nuclear Reactor}
+Once per turn: You can Special Summon 1 "Orbital Experimental Nuclear Reactor Token" (Machine/DARK/Level 11/ATK 0/DEF 0).'''
+
+[[card]]
+id = 2316607793
+set = "orbital"
+name = "Orbital Experimental Nuclear Reactor Token"
+level = 11
+attribute = "dark"
+race = "machine"
+type = "monster normal token"
+atk = 0
+def = 0
+effect = '''
+Special Summoned by the effect of "Orbital Experimental Nuclear Reactor".'''
 
 [[card]]
 id = 2878970365
