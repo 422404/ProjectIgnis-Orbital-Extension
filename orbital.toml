@@ -239,16 +239,6 @@ effect = '''
 When an opponent's monster declares an attack: Discard 1 card from your Hand; you can change the position of any of your controlled monsters.
 If sending this card to the GY: if you control an "Orbital Relay System", attach this card to it instead.'''
 
-[[card]]
-id = 4067697226
-setnumber = "${SETN|013}"
-set = "orbital"
-name = "Orbital Redeployment"
-type = "trap"
-effect = '''
-When an "Orbital" Xyz monster would be sent to the GY: Send its materials to the GY; leave it on the field.
-If sending this card to the GY: if you control an "Orbital Relay System", attach this card to it instead.'''
-
 ################################################################################
 #                              Extra Deck Monsters                             #
 ################################################################################
