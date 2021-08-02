@@ -168,15 +168,6 @@ strings = [
 ################################################################################
 
 [[card]]
-id = 4067697219
-setnumber = "${SETN|006}"
-set = "orbital"
-name = "Orbital Refueling"
-type = "spell"
-effect = '''
-Target 1 "Orbital" Xyz Monster you control; attach this card to that monster as an Xyz material.'''
-
-[[card]]
 id = 4067697220
 setnumber = "${SETN|007}"
 set = "orbital"
