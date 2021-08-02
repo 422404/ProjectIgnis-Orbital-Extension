@@ -203,8 +203,7 @@ set = "orbital"
 name = "Orbital Kinetic Bombardment"
 type = "spell"
 effect = '''
-Target 1 "Orbital" Xyz monster on the player field, detach 2 materials from it then target up to 2 opponent's monsters on the field, send them to the GY.
-Instead of sending this card to the GY, attach it to a controlled Rank 10+ Xyz monster.'''
+Target 1 "Orbital" Xyz monster on the player field, detach 3 materials from it then target an opponent's Face-Up monster on the field, banish it Face-Down.'''
 
 [[card]]
 id = 4067697223
