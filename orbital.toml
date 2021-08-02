@@ -168,15 +168,6 @@ strings = [
 ################################################################################
 
 [[card]]
-id = 4067697220
-setnumber = "${SETN|007}"
-set = "orbital"
-name = "Orbital Restocking"
-type = "spell"
-effect = '''
-Target up to 5 cards (min. 1) in your GY; shuffle them in the Deck.'''
-
-[[card]]
 id = 4067697221
 setnumber = "${SETN|008}"
 set = "orbital"
