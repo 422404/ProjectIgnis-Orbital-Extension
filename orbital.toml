@@ -236,8 +236,7 @@ set = "orbital"
 name = "Orbital Trajectory Correction"
 type = "trap"
 effect = '''
-When an opponent's monster declares an attack: Discard 1 card from your Hand; you can change the position of any of your controlled monsters.
-If sending this card to the GY: if you control an "Orbital Relay System", attach this card to it instead.'''
+When an opponent's monster declares an attack: Banish 1 card from your Hand; negate the attack.'''
 
 ################################################################################
 #                              Extra Deck Monsters                             #
